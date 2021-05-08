@@ -28,12 +28,18 @@ requirements:
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-r6 >=2.0
     - r-digest
+    - r-dplyr
+    - r-gmp
+    - r-homomorpher
     - r-httr >=1.0.0
     - r-jsonlite
+    - r-magrittr
+    - r-rlang
     - r-shiny
     - r-stringr
     - r-survival
@@ -42,8 +48,13 @@ requirements:
     - {{ native }}gcc-libs         # [win]
     - r-r6 >=2.0
     - r-digest
+    - r-dplyr
+    - r-gmp
+    - r-homomorpher
     - r-httr >=1.0.0
     - r-jsonlite
+    - r-magrittr
+    - r-rlang
     - r-shiny
     - r-stringr
     - r-survival
