@@ -1,4 +1,4 @@
-{% set version = "1.3-2" %}
+{% set version = "1.3-3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/distcomp_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/distcomp/distcomp_{{ version }}.tar.gz
-  sha256: 11f0abde70f3e3a49741dc7311738d33703b181dd54693ede2266ba01e756fda
+  sha256: 16ed1fe562c8a8c37b5982de40ee5bef282ed5fe8cc00c4c316b83353f630806
 
 build:
   merge_build_host: true  # [win]
